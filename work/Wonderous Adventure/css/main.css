@@ -1,0 +1,16 @@
+.header {
+  margin-bottom: 30px; }
+
+.main #adventure-story {
+  font-size: 24px;
+  padding: 35px;
+  margin: 0 auto; }
+
+#dice-button {
+  padding: 15px;
+  margin: 20px 0px; }
+  #dice-button #dice-div {
+    padding: 35px;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=main.css.map */
