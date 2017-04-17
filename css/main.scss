@@ -6,7 +6,7 @@ html {
 }
 
 .logo-img {
-  border: 3px solid #717577;
+  border: 3px solid #F18805;
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -14,20 +14,28 @@ html {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-
+  main {
+    background-color: blue;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-
+  main {
+    background-color: red;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-
+  main {
+    background-color: green;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+  main {
+    background-color: pink;
+  }
 }

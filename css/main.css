@@ -5,6 +5,19 @@ html {
   box-sizing: inherit; }
 
 .logo-img {
-  border: 3px solid #717577; }
+  border: 3px solid #F18805; }
+
+@media (min-width: 576px) {
+  main {
+    background-color: blue; } }
+@media (min-width: 768px) {
+  main {
+    background-color: red; } }
+@media (min-width: 992px) {
+  main {
+    background-color: green; } }
+@media (min-width: 1200px) {
+  main {
+    background-color: pink; } }
 
 /*# sourceMappingURL=main.css.map */
