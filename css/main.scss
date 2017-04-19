@@ -1,17 +1,51 @@
 html {
   box-sizing: border-box;
 }
+
+
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 .logo-img {
-  border: 3px solid #F18805;
+  border: 4px solid #F18805;
 }
 
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+.logo-text {
+}
 
+.jumbotron {
+  background-color: #fff;
+  // background-image: url(./../assets/bridge.jpg);
+}
+
+.navbar {
+  min-height: 56px;
+    a:hover {
+
+    }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+// This is the default size in Bootstrap
+@media (max-width: 575px) {
+  main {
+    background-color: yellow;
+  }
+  .jumbotron {
+    padding: 0;
+  }
+  .logo-end-text {
+    display: none;
+  }
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   main {
@@ -36,6 +70,6 @@ html {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   main {
-    background-color: pink;
+    background-color: #fff;
   }
 }

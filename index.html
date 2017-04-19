@@ -12,15 +12,14 @@
 	<body>
 
 		<header>
-
-      <nav class="navbar navbar-toggleable-md navbar-light">
-
+      <nav class="navbar navbar-toggleable-sm navbar-light">
+      <!-- <nav class="navbar navbar-toggleable-sm navbar-light bg-faded"> -->
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
 
-          <a class="navbar-brand" href="#">Rob Catlin</a>
+          <!-- <a class="navbar-brand hidden-sm-up" href="#">Rob Catlin</a> -->
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
@@ -36,52 +35,38 @@
             </ul>
           </div>
         </div>
-      </nav>
-
-
-
-
-
-			<!-- <nav class="navbar navbar-default bg-inverse">
-				<div class="container">
-          <ul class="nav">
-            <a class="nav-item nav-link active" href="#top">About Me</a>
-            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
-          </ul>
+      </nav> <!-- end of nav -->
+      <div class="jumbotron jumbotron-fluid mb-1">
+        <div class="container py-auto d-flex align-items-center">
+          <span class="mr-4">
+            <img src="./assets/small-me.png" alt="Rob Catlin Image" class="img-fluid rounded-circle  hidden-sm-down logo-img">
+          </span>
+          <span class="logo-text">
+            <h1 class="display-3">Rob Catlin</h1>
+            <p class="display-4 text-muted">Front End Dev<span class="logo-end-text">eloper</span></p>
+          </span>
         </div>
-			</nav> -->
+      </div> <!-- end of jumbotron div -->
 
-				<!-- <div class="row">
-					<section class="col">
-							<img src="./assets/me.png" alt="Rob Catlin Image" class="img-fluid rounded-circle logo-img hidden-sm-down">
-					</section>
-          <section class="col">
-            <span class="logo-text lead">
-              <h1>Rob<br> Catlin</h1>
-              <p>Front End Web Developer</p>
-            </span>
-          </section>
-				</div> -->
-		 </header> <!-- end of container-fluid -->
+    </header> <!-- end of header -->
 
 		<main class="container">
 			<div class="row">
 				<section class="col-md-6">
 					<h3>Who am I</h3>
-					<p class="lead">Rob Catlin, a Front End web developer from Hertfordshire, UK. I love tech. All types of tech. The day I realised I could bend the web to my will just by using a text editor my life was forever changed. I knew that web development was made for me. People will pay me money to do this? I still ask myself this question and wonder how I do a job I love every day and get paid to do it.</p>
+					<p class="">Rob Catlin, a Front End web developer from Hertfordshire, UK. I love tech. All types of tech. The day I realised I could bend the web to my will just by using a text editor my life was forever changed. I knew that web development was made for me. People will pay me money to do this? I still ask myself this question and wonder how I do a job I love every day and get paid to do it.</p>
 				</section>
 				<section class="col-md-6">
 					<h3>About my work</h3>
-					<p class="lead">I love Front End development and the satisfaction of making pixel perfect things for the web. I am always learning, always looking for a new tool or framework to improve my workflow. When I take on a new project I like to use the best tool for the job, and if that involves learning something new then that makes me happy inside.</p>
+					<p class="">I love Front End development and the satisfaction of making pixel perfect things for the web. I am always learning, always looking for a new tool or framework to improve my workflow. When I take on a new project I like to use the best tool for the job, and if that involves learning something new then that makes me happy inside.</p>
 				</section>
 			</div>
 			<div class="row">
 				<section class="col-md-6">
 					<h3>My toolbox</h3>
-					<p class="lead">I use a mix of technology to create exciting websites and web apps.</p>
+					<p class="">I use a mix of technology to create exciting websites and web apps.</p>
 					<ul>
-						HTML5</li>
+						<li>HTML5</li>
 						<li>CSS3 / SASS</li>
 						<li>Javascript / jQuery</li>
 						<li>Bootstrap</li>
@@ -90,7 +75,7 @@
 				</section>
 				<section class="col-md-6">
 					<h3>Education</h3>
-					<p class="lead">I am mostly self-taught with a few courses to increase my knowledge. The web is constantly evolving and growing. A developers reading list is never finished.</p>
+					<p class="">I am mostly self-taught with a few courses to increase my knowledge. The web is constantly evolving and growing. A developers reading list is never finished.</p>
 					<dl>
 						<dt>General Assembly</dt>
 						<dd><a href="#">Javascript Web Development</a></dd>
@@ -103,10 +88,10 @@
 			</div>
 		</main> <!-- end of main container -->
 
-		<footer class="container-fluid">
+		<footer class="container-fluid navbar bg-faded">
 			<div class="row">
-				<section class="col text-center">
-					<p>
+				<section class="col navbar-nav text-center">
+					<p class="nav-link">
 						&copy Rob Catlin 2017
 						<a href=""></a>
 						<a href=""></a>
