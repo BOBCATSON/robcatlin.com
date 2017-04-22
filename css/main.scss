@@ -1,15 +1,24 @@
+/*
+GENERAL HTML STYLES
+*******************************************************************************/
 html {
   box-sizing: border-box;
 }
-
-
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+/*
+SASS VARIABLES
+*******************************************************************************/
+$brand-color: #F18805;
+
+/*
+HEADER
+*******************************************************************************/
 .logo-img {
-  border: 4px solid #F18805;
+  border: 4px solid $brand-color;
 }
 
 .logo-text {
@@ -20,19 +29,26 @@ html {
   // background-image: url(./../assets/bridge.jpg);
 }
 
+/*
+NAVIGATION
+*******************************************************************************/
 .navbar {
   min-height: 56px;
     a:hover {
-
+      color: $brand-color;
     }
 }
 
-.inline-block {
-  display: inline-block;
+/*
+FOOTER
+*******************************************************************************/
+p.nav-link {
+  margin-bottom: 0;
 }
 
-
-
+/*
+MEDIA QUERIES
+*******************************************************************************/
 // Extra small devices (portrait phones, less than 576px)
 // This is the default size in Bootstrap
 @media (max-width: 575px) {
@@ -42,10 +58,17 @@ html {
   .jumbotron {
     padding: 0;
   }
-  .logo-end-text {
+  .logo-text {
+    margin-left: 0;
+    .logo-end-text {
+      display: none;
+    }
+  }
+  .logo-img-span {
     display: none;
   }
 }
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   main {

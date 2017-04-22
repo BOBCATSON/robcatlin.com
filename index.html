@@ -13,13 +13,10 @@
 
 		<header>
       <nav class="navbar navbar-toggleable-sm navbar-light">
-      <!-- <nav class="navbar navbar-toggleable-sm navbar-light bg-faded"> -->
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-
-          <!-- <a class="navbar-brand hidden-sm-up" href="#">Rob Catlin</a> -->
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
@@ -35,10 +32,11 @@
             </ul>
           </div>
         </div>
-      </nav> <!-- end of nav -->
+      </nav> <!-- END OF NAV -->
+
       <div class="jumbotron jumbotron-fluid mb-1">
         <div class="container py-auto d-flex align-items-center">
-          <span class="mr-4">
+          <span class="logo-img-span mr-4">
             <img src="./assets/small-me.png" alt="Rob Catlin Image" class="img-fluid rounded-circle  hidden-sm-down logo-img">
           </span>
           <span class="logo-text">
@@ -46,11 +44,13 @@
             <p class="display-4 text-muted">Front End Dev<span class="logo-end-text">eloper</span></p>
           </span>
         </div>
-      </div> <!-- end of jumbotron div -->
+      </div> <!-- END OF JUMBOTRON -->
 
-    </header> <!-- end of header -->
+    </header> <!-- END OF HEADER -->
 
 		<main class="container">
+
+      <!-- ABOUT ME SECTION ---------------------------------------------------->
 			<div class="row">
 				<section class="col-md-6">
 					<h3>Who am I</h3>
@@ -86,19 +86,75 @@
 					</dl>
 				</section>
 			</div>
-		</main> <!-- end of main container -->
+      <!-- END OF ABOUT ME SECTION ---------------------------------------------------->
+
+      <!-- PORTFOLIO SECTION ---------------------------------------------------->
+      <div class="row">
+
+				<div class="card-columns"> <!-- START OF CARDS COLUMN -->
+
+					<div class="card">
+						<img src="./assets/marcus.jpeg" alt="Markus Copeland - Actor" class="card-img-top">
+						<div class="card-block">
+							<h4 class="card-title">Markus Copeland</h4>
+							<p class="card-text">An actor with the penchant for the dramatic. So, just another actor then...</p>
+							<a href="" class="btn btn-primary">Visit Site</a>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="./assets/marcus.jpeg" alt="Markus Copeland - Actor" class="card-img-top">
+						<div class="card-block">
+							<h4 class="card-title">Watford Credit Union</h4>
+							<p class="card-text">Watford Credit Union has helped me
+								to manage my money better, encouraged me to save
+								and has made me feel more in control of my finances</p>
+							<a href="" class="btn btn-primary">Visit Site</a>
+						</div>
+					</div>
+
+				</div> <!-- END OF CARDS COLUMN -->
+
+      </div> <!-- END OF PORTFOLIO ROW -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</main> <!-- END OF MAIN CONTAINER -->
 
 		<footer class="container-fluid navbar bg-faded">
-			<div class="row">
-				<section class="col navbar-nav text-center">
-					<p class="nav-link">
-						&copy Rob Catlin 2017
-						<a href=""></a>
-						<a href=""></a>
-						<a href=""></a>
-					</p>
-				</section>
-			</div>
+				<nav class="nav navbar-nav">
+          <div class="container">
+            <p class="nav-link text-muted text-center">
+							Made with love, late nights and tea. Lots of tea!
+              &copy Rob Catlin 2017
+              <span class="footer-nav-links ml-2">
+                <a href="">Blog</a>&middot
+                <a href="">Linked In</a>&middot
+                <a href="">Twitter</a>
+              </span>
+            </p>
+          </div>
+				</nav>
 		</footer>
 
 	<script src="./node_modules/jquery/dist/jquery.js" charset="utf-8"></script>

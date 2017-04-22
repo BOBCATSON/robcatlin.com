@@ -1,21 +1,41 @@
+/*
+GENERAL HTML STYLES
+*******************************************************************************/
 html {
   box-sizing: border-box; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
 
+/*
+SASS VARIABLES
+*******************************************************************************/
+/*
+HEADER
+*******************************************************************************/
 .logo-img {
   border: 4px solid #F18805; }
 
 .jumbotron {
   background-color: #fff; }
 
+/*
+NAVIGATION
+*******************************************************************************/
 .navbar {
   min-height: 56px; }
+  .navbar a:hover {
+    color: #F18805; }
 
-.inline-block {
-  display: inline-block; }
+/*
+FOOTER
+*******************************************************************************/
+p.nav-link {
+  margin-bottom: 0; }
 
+/*
+MEDIA QUERIES
+*******************************************************************************/
 @media (max-width: 575px) {
   main {
     background-color: yellow; }
@@ -23,7 +43,12 @@ html {
   .jumbotron {
     padding: 0; }
 
-  .logo-end-text {
+  .logo-text {
+    margin-left: 0; }
+    .logo-text .logo-end-text {
+      display: none; }
+
+  .logo-img-span {
     display: none; } }
 @media (min-width: 576px) {
   main {
