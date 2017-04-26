@@ -28,13 +28,20 @@ NAVIGATION
     color: #F18805; }
 
 /*
+CONTACT / SOCIAL MEDIA SECTION
+*******************************************************************************/
+.social-media-col {
+  background-color: #ccc; }
+
+.fa {
+  display: block;
+  font-size: 5rem; }
+
+/*
 FOOTER
 *******************************************************************************/
 p.nav-link {
   margin-bottom: 0; }
-
-.social-media-col {
-  background-color: #888; }
 
 /*
 MEDIA QUERIES
