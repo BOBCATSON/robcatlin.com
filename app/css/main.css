@@ -16,9 +16,6 @@ HEADER
 .logo-img {
   border: 4px solid #F18805; }
 
-.jumbotron {
-  background-color: #fff; }
-
 /*
 NAVIGATION
 *******************************************************************************/
@@ -59,7 +56,10 @@ MEDIA QUERIES
       display: none; }
 
   .logo-img-span {
-    display: none; } }
+    display: none; }
+
+  .fa {
+    font-size: 3rem; } }
 @media (min-width: 576px) {
   main {
     background-color: blue; } }

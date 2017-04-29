@@ -25,8 +25,9 @@ HEADER
 }
 
 .jumbotron {
-  background-color: #fff;
-  // background-image: url(./../assets/bridge.jpg);
+  // background-color: #fff;
+  // background-image: url('./../assets/brick.jpg');
+  // height: calc(100vh - 56px);
 }
 
 /*
@@ -79,6 +80,10 @@ MEDIA QUERIES
   }
   .logo-img-span {
     display: none;
+  }
+
+  .fa {
+    font-size: 3rem;
   }
 }
 
