@@ -25,6 +25,9 @@ NAVIGATION
     color: #F18805; }
 
 /*
+ABOUT ME SECTION
+*******************************************************************************/
+/*
 CONTACT / SOCIAL MEDIA SECTION
 *******************************************************************************/
 .social-media-col {
@@ -46,31 +49,29 @@ MEDIA QUERIES
 @media (max-width: 575px) {
   main {
     background-color: yellow; }
-
   .jumbotron {
     padding: 0; }
-
   .logo-text {
     margin-left: 0; }
     .logo-text .logo-end-text {
       display: none; }
-
   .logo-img-span {
     display: none; }
-
   .fa {
     font-size: 3rem; } }
+
 @media (min-width: 576px) {
   main {
     background-color: blue; } }
+
 @media (min-width: 768px) {
   main {
     background-color: red; } }
+
 @media (min-width: 992px) {
   main {
     background-color: green; } }
+
 @media (min-width: 1200px) {
   main {
     background-color: #fff; } }
-
-/*# sourceMappingURL=main.css.map */

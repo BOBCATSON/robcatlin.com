@@ -41,6 +41,11 @@ NAVIGATION
 }
 
 /*
+ABOUT ME SECTION
+*******************************************************************************/
+
+
+/*
 CONTACT / SOCIAL MEDIA SECTION
 *******************************************************************************/
 .social-media-col {
@@ -60,15 +65,18 @@ p.nav-link {
   margin-bottom: 0;
 }
 
+
+
+
+
+
 /*
 MEDIA QUERIES
 *******************************************************************************/
 // Extra small devices (portrait phones, less than 576px)
 // This is the default size in Bootstrap
 @media (max-width: 575px) {
-  main {
-    background-color: yellow;
-  }
+
   .jumbotron {
     padding: 0;
   }
@@ -83,26 +91,29 @@ MEDIA QUERIES
   }
 
   .fa {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) {
   main {
     background-color: blue;
+  }
+  .jumbotron {
+    padding: 0;
   }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   main {
     background-color: red;
   }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   main {
     background-color: green;
   }

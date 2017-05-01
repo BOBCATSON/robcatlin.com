@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var pug = require('pug-sass');
+var jquery = require('gulp-jquery');
 var browserSync = require('browser-sync').create();
 
 // compile sass to css
@@ -13,16 +13,6 @@ gulp.task('sass', function(){
     }))
 });
 
-// compile jade to html
-gulp.task('pug', function(){
-  return gulp.src('app/pug/**/*.pug')
-    .pipe(pug())
-    .pipe(gulp.dest('app/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-});
-
 // browser reload
 gulp.task('browserSync', function(){
   browserSync.init({
@@ -30,6 +20,15 @@ gulp.task('browserSync', function(){
       baseDir: 'app'
     },
   })
+});
+
+
+gulp.task('jquery', function () {
+    return gulp.src('./../node_modules/jquery/dist/jquery.js')
+        .pipe(jquery({
+            flags: ['-deprecated', '-event/alias', '-ajax/script', '-ajax/jsonp', '-exports/global']
+        }))
+        .pipe(gulp.dest('./public/vendor/'));
 });
 
 // gulp watch task to reload files when i save
