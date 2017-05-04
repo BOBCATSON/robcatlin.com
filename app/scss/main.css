@@ -1,4 +1,7 @@
 /*
+SASS VARIABLES
+*******************************************************************************/
+/*
 GENERAL HTML STYLES
 *******************************************************************************/
 html {
@@ -7,14 +10,22 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-/*
-SASS VARIABLES
-*******************************************************************************/
+body {
+  position: relative; }
+
+.col-headings {
+  font-size: 2rem;
+  color: #F18805; }
+
 /*
 HEADER
 *******************************************************************************/
 .logo-img {
   border: 4px solid #F18805; }
+
+.jumbotron {
+  margin-bottom: 10px;
+  background-color: #fff; }
 
 /*
 NAVIGATION
@@ -26,6 +37,9 @@ NAVIGATION
 
 /*
 ABOUT ME SECTION
+*******************************************************************************/
+/*
+PORTFOLIO SECTION
 *******************************************************************************/
 /*
 CONTACT / SOCIAL MEDIA SECTION
@@ -51,7 +65,8 @@ MEDIA QUERIES
     padding: 0; }
 
   .logo-text {
-    margin-left: 0; }
+    margin-left: 0;
+    padding: 1rem 0; }
     .logo-text .logo-end-text {
       display: none; }
 
@@ -61,19 +76,36 @@ MEDIA QUERIES
   .fa {
     font-size: 2.5rem; } }
 @media (min-width: 576px) and (max-width: 767px) {
-  main {
-    background-color: blue; }
-
   .jumbotron {
-    padding: 0; } }
+    padding: 0; }
+
+  .logo-text {
+    margin-left: 0;
+    padding: 1rem 0; }
+    .logo-text .logo-end-text {
+      display: none; }
+
+  .logo-img-span {
+    display: none; } }
 @media (min-width: 768px) and (max-width: 991px) {
   main {
-    background-color: red; } }
+    background-color: red; }
+
+  .jumbotron {
+    padding-bottom: 1rem; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   main {
-    background-color: green; } }
+    background-color: green; }
+
+  .jumbotron {
+    padding-bottom: 1rem; } }
 @media (min-width: 1200px) {
-  main {
-    background-color: #fff; } }
+  .jumbotron {
+    height: calc(100vh - 56px);
+    display: flex;
+    align-items: center; }
+    .jumbotron .container {
+      justify-content: center;
+      margin-top: -56px; } }
 
 /*# sourceMappingURL=main.css.map */

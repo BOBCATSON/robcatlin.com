@@ -1,4 +1,9 @@
 /*
+SASS VARIABLES
+*******************************************************************************/
+$brand-color: #F18805;
+
+/*
 GENERAL HTML STYLES
 *******************************************************************************/
 html {
@@ -9,10 +14,16 @@ html {
   box-sizing: inherit;
 }
 
-/*
-SASS VARIABLES
-*******************************************************************************/
-$brand-color: #F18805;
+body {
+  position: relative;
+}
+
+.col-headings {
+  font-size: 2rem;
+  color: $brand-color;
+  // background-color: #292B2C;
+}
+
 
 /*
 HEADER
@@ -25,9 +36,8 @@ HEADER
 }
 
 .jumbotron {
-  // background-color: #fff;
-  // background-image: url('./../assets/brick.jpg');
-  // height: calc(100vh - 56px);
+  margin-bottom: 10px;
+  background-color: #fff;
 }
 
 /*
@@ -44,6 +54,9 @@ NAVIGATION
 ABOUT ME SECTION
 *******************************************************************************/
 
+/*
+PORTFOLIO SECTION
+*******************************************************************************/
 
 /*
 CONTACT / SOCIAL MEDIA SECTION
@@ -74,14 +87,13 @@ p.nav-link {
 MEDIA QUERIES
 *******************************************************************************/
 // Extra small devices (portrait phones, less than 576px)
-// This is the default size in Bootstrap
 @media (max-width: 575px) {
-
   .jumbotron {
     padding: 0;
   }
   .logo-text {
     margin-left: 0;
+    padding: 1rem 0;
     .logo-end-text {
       display: none;
     }
@@ -89,7 +101,6 @@ MEDIA QUERIES
   .logo-img-span {
     display: none;
   }
-
   .fa {
     font-size: 2.5rem;
   }
@@ -97,11 +108,18 @@ MEDIA QUERIES
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
-  main {
-    background-color: blue;
-  }
   .jumbotron {
     padding: 0;
+  }
+  .logo-text {
+    margin-left: 0;
+    padding: 1rem 0;
+    .logo-end-text {
+      display: none;
+    }
+  }
+  .logo-img-span {
+    display: none;
   }
 }
 
@@ -110,6 +128,9 @@ MEDIA QUERIES
   main {
     background-color: red;
   }
+  .jumbotron {
+    padding-bottom: 1rem;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -117,11 +138,21 @@ MEDIA QUERIES
   main {
     background-color: green;
   }
+  .jumbotron {
+    padding-bottom: 1rem;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  main {
-    background-color: #fff;
+  .jumbotron {
+    height: calc(100vh - 56px);
+    display: flex;
+    align-items: center;
+    // background-image: url('./../images/brick.jpg');
+      .container {
+        justify-content: center;
+        margin-top: -56px;
+      }
   }
 }
