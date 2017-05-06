@@ -2,12 +2,15 @@
 SASS VARIABLES
 *******************************************************************************/
 $brand-color: #F18805;
+$link-color: #1A8FE3;
+$text-color: #6D676E;
 
 /*
 GENERAL HTML STYLES
 *******************************************************************************/
 html {
   box-sizing: border-box;
+  color: $text-color;
 }
 
 *, *:before, *:after {
@@ -18,6 +21,15 @@ body {
   position: relative; // ready for scrollspy
 }
 
+.btn-primary {
+  background-color: $brand-color;
+  border-color: #fff;
+}
+
+a {
+  color: $link-color;
+}
+
 /*
 HEADER
 *******************************************************************************/
@@ -25,7 +37,8 @@ HEADER
 //   border: 4px solid $brand-color;
 // }
 
-.logo-text {
+.logo-text p {
+  color: $brand-color;
 }
 
 .jumbotron {
@@ -50,7 +63,9 @@ ABOUT ME SECTION
 /*
 PORTFOLIO SECTION
 *******************************************************************************/
-
+.portfolio {
+  margin-bottom: 56px;
+}
 /*
 CONTACT
 *******************************************************************************/
@@ -67,9 +82,8 @@ CONTACT
 /*
 FOOTER
 *******************************************************************************/
-footer {
-  display: none;
-  background-color: #292B2C;
+footer.navbar {
+  background-color: #fff;
   p.nav-link {
     margin-bottom: 0;
   }
@@ -80,7 +94,6 @@ MEDIA QUERIES
 *******************************************************************************/
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
-
   .jumbotron {
     padding: 0;
     .logo-text {
@@ -92,11 +105,15 @@ MEDIA QUERIES
     }
   }
 
+  h1 {
+    margin-bottom: 0;
+  }
+
   .fa {
     display: none;
   }
 
-  footer {
+  footer.navbar {
     background-color: #292B2C;
   }
 
@@ -126,16 +143,12 @@ MEDIA QUERIES
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
-
   .jumbotron {
     padding: 0;
   }
   .logo-text {
     margin-left: 0;
     padding: 1rem 0;
-    .logo-end-text {
-      display: none;
-    }
   }
   .logo-img-span {
     display: none;
@@ -160,10 +173,10 @@ MEDIA QUERIES
     display: flex;
     align-items: center;
     // background-image: url('./../images/brick.jpg');
-      .container {
-        justify-content: center;
-        align-items: center;
-        margin-top: -56px;
-      }
+    .container {
+      justify-content: center;
+      align-items: center;
+      margin-top: -56px;
+    }
   }
 }
