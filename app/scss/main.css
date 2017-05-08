@@ -14,30 +14,26 @@ html {
 body {
   position: relative; }
 
-.btn-primary {
-  background-color: #F18805;
-  border-color: #fff; }
-
 a {
-  color: #1A8FE3; }
+  color: #0275D8; }
+  a:hover {
+    color: #D11149;
+    text-decoration: none; }
 
 /*
 HEADER
 *******************************************************************************/
-.logo-text p {
-  color: #F18805; }
-
 .jumbotron {
   margin-bottom: 10px;
   background-color: #fff; }
+  .jumbotron .logo-text p {
+    color: #F18805; }
 
 /*
 NAVIGATION
 *******************************************************************************/
 .navbar {
   min-height: 56px; }
-  .navbar a:hover {
-    color: #F18805; }
 
 /*
 ABOUT ME SECTION
@@ -46,17 +42,18 @@ ABOUT ME SECTION
 PORTFOLIO SECTION
 *******************************************************************************/
 .portfolio {
-  margin-bottom: 56px; }
+  margin-top: 2rem; }
 
 /*
 CONTACT
 *******************************************************************************/
 .contact-col {
-  background-color: #292B2C; }
+  background-color: #fff;
+  margin-top: 3rem; }
 
 .fa {
   display: block;
-  font-size: 5rem; }
+  font-size: 3rem; }
 
 /*
 FOOTER
@@ -81,48 +78,41 @@ MEDIA QUERIES
   h1 {
     margin-bottom: 0; }
 
-  .fa {
-    display: none; }
-
-  footer.navbar {
-    background-color: #292B2C; }
-
   .contact-col {
-    background-color: inherit; }
+    margin: 0; }
     .contact-col .contact-nav-links {
-      display: flex;
-      flex-direction: column; }
+      display: flex; }
       .contact-col .contact-nav-links a.nav-link {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: left;
-        background-color: #ccc;
-        border-radius: 5px;
         margin: 6px 0px; }
         .contact-col .contact-nav-links a.nav-link p {
-          display: inline-flex;
-          text-align: left;
-          font-size: 2rem;
-          margin-bottom: 0; } }
+          display: none; }
+
+  footer.navbar {
+    background-color: #292B2C; } }
 @media (min-width: 576px) and (max-width: 767px) {
   .jumbotron {
     padding: 0; }
-
-  .logo-text {
-    margin-left: 0;
-    padding: 1rem 0; }
-
-  .logo-img-span {
-    display: none; } }
+    .jumbotron .logo-text {
+      margin-left: 0;
+      padding: 1rem 0; }
+      .jumbotron .logo-text .logo-img-span {
+        display: none; } }
 @media (min-width: 1200px) {
-  .jumbotron {
-    height: calc(100vh - 56px);
-    display: flex;
-    align-items: center; }
-    .jumbotron .container {
-      justify-content: center;
+  header {
+    margin-bottom: 2rem; }
+    header .jumbotron {
+      height: calc(100vh - 56px);
+      display: flex;
       align-items: center;
-      margin-top: -56px; } }
+      background-image: url("./../images/surf.jpg");
+      background-position: 90% 10%; }
+      header .jumbotron .container {
+        justify-content: center;
+        align-items: center;
+        margin-top: -56px;
+        opacity: 0.9; } }
 
 /*# sourceMappingURL=main.css.map */

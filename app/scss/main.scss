@@ -2,7 +2,9 @@
 SASS VARIABLES
 *******************************************************************************/
 $brand-color: #F18805;
-$link-color: #1A8FE3;
+$link-color: #0275D8;
+$link-hover: #D11149;
+$link-visited: #A30000;
 $text-color: #6D676E;
 
 /*
@@ -21,29 +23,23 @@ body {
   position: relative; // ready for scrollspy
 }
 
-.btn-primary {
-  background-color: $brand-color;
-  border-color: #fff;
-}
-
 a {
   color: $link-color;
+  &:hover {
+    color: $link-hover;
+    text-decoration: none;
+  }
 }
 
 /*
 HEADER
 *******************************************************************************/
-// .logo-img {
-//   border: 4px solid $brand-color;
-// }
-
-.logo-text p {
-  color: $brand-color;
-}
-
 .jumbotron {
   margin-bottom: 10px;
   background-color: #fff;
+  .logo-text p {
+    color: $brand-color;
+  }
 }
 
 /*
@@ -51,9 +47,6 @@ NAVIGATION
 *******************************************************************************/
 .navbar {
   min-height: 56px;
-    a:hover {
-      color: $brand-color;
-    }
 }
 
 /*
@@ -64,19 +57,20 @@ ABOUT ME SECTION
 PORTFOLIO SECTION
 *******************************************************************************/
 .portfolio {
-  margin-bottom: 56px;
+  margin-top: 2rem;
 }
 /*
 CONTACT
 *******************************************************************************/
 .contact-col {
-  background-color: #292B2C;
+  background-color: #fff;
+  margin-top: 3rem;
 }
 
 // FAVICON SYMBOLS
 .fa {
   display: block;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 /*
@@ -109,49 +103,40 @@ MEDIA QUERIES
     margin-bottom: 0;
   }
 
-  .fa {
-    display: none;
+  .contact-col {
+    margin: 0;
+    .contact-nav-links {
+      display: flex;
+      // flex-direction: column;
+      a.nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 6px 0px;
+        p {
+          display: none;
+        }
+      }
+    }
   }
 
   footer.navbar {
     background-color: #292B2C;
   }
-
-  .contact-col {
-    background-color: inherit;
-    .contact-nav-links {
-      display: flex;
-      flex-direction: column;
-      a.nav-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-        background-color: #ccc;
-        border-radius: 5px;
-        margin: 6px 0px;
-        p {
-          display: inline-flex;
-          text-align: left;
-          font-size: 2rem;
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
 }
+
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
   .jumbotron {
     padding: 0;
-  }
-  .logo-text {
-    margin-left: 0;
-    padding: 1rem 0;
-  }
-  .logo-img-span {
-    display: none;
+    .logo-text {
+      margin-left: 0;
+      padding: 1rem 0;
+      .logo-img-span {
+        display: none;
+      }
+    }
   }
 }
 
@@ -167,16 +152,21 @@ MEDIA QUERIES
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
-  .jumbotron {
-    height: calc(100vh - 56px);
-    display: flex;
-    align-items: center;
-    // background-image: url('./../images/brick.jpg');
-    .container {
-      justify-content: center;
+  header {
+    margin-bottom: 2rem;
+    .jumbotron {
+      height: calc(100vh - 56px);
+      display: flex;
       align-items: center;
-      margin-top: -56px;
+      background-image: url('./../images/surf.jpg');
+      // background-size: cover;
+      background-position: 90% 10%;
+      .container {
+        justify-content: center;
+        align-items: center;
+        margin-top: -56px;
+        opacity: 0.9;
+      }
     }
   }
 }
