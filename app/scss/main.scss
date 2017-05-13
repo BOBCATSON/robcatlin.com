@@ -59,6 +59,7 @@ PORTFOLIO SECTION
 .portfolio {
   margin-top: 2rem;
 }
+
 /*
 CONTACT
 *******************************************************************************/
@@ -93,9 +94,6 @@ MEDIA QUERIES
     .logo-text {
       margin-left: 0;
       padding: 1rem 0;
-      .logo-end-text {
-        display: none;
-      }
     }
   }
 
@@ -107,7 +105,6 @@ MEDIA QUERIES
     margin: 0;
     .contact-nav-links {
       display: flex;
-      // flex-direction: column;
       a.nav-link {
         display: flex;
         justify-content: center;
@@ -124,7 +121,6 @@ MEDIA QUERIES
     background-color: #292B2C;
   }
 }
-
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
