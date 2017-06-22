@@ -64,6 +64,9 @@ footer.navbar {
     margin-bottom: 0; }
 
 /*
+JQUERY
+*******************************************************************************/
+/*
 MEDIA QUERIES
 *******************************************************************************/
 @media (max-width: 575px) {
@@ -72,8 +75,6 @@ MEDIA QUERIES
     .jumbotron .logo-text {
       margin-left: 0;
       padding: 1rem 0; }
-      .jumbotron .logo-text .logo-end-text {
-        display: none; }
 
   h1 {
     margin-bottom: 0; }
@@ -91,7 +92,10 @@ MEDIA QUERIES
           display: none; }
 
   footer.navbar {
-    background-color: #292B2C; } }
+    background-color: #292B2C; }
+
+  #scroll-up-div {
+    display: none; } }
 @media (min-width: 576px) and (max-width: 767px) {
   .jumbotron {
     padding: 0; }
@@ -99,7 +103,16 @@ MEDIA QUERIES
       margin-left: 0;
       padding: 1rem 0; }
       .jumbotron .logo-text .logo-img-span {
-        display: none; } }
+        display: none; }
+
+  #scroll-up-div {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  #scroll-up-div {
+    display: none; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #scroll-up-div {
+    display: none; } }
 @media (min-width: 1200px) {
   header {
     margin-bottom: 2rem; }
@@ -107,12 +120,23 @@ MEDIA QUERIES
       height: calc(100vh - 56px);
       display: flex;
       align-items: center;
-      background-image: url("./../images/surf.jpg");
       background-position: 90% 10%; }
       header .jumbotron .container {
         justify-content: center;
         align-items: center;
         margin-top: -56px;
-        opacity: 0.9; } }
+        opacity: 0.9; }
+
+  #scroll-up-div {
+    position: fixed;
+    z-index: 1;
+    top: 90%;
+    left: 93%; }
+    #scroll-up-div i {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      margin: 6px;
+      color: #F18805; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -85,6 +85,12 @@ footer.navbar {
 }
 
 /*
+JQUERY
+*******************************************************************************/
+
+
+
+/*
 MEDIA QUERIES
 *******************************************************************************/
 // Extra small devices (portrait phones, less than 576px)
@@ -120,6 +126,9 @@ MEDIA QUERIES
   footer.navbar {
     background-color: #292B2C;
   }
+  #scroll-up-div {
+    display: none;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -134,16 +143,23 @@ MEDIA QUERIES
       }
     }
   }
+  #scroll-up-div {
+    display: none;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
-
+  #scroll-up-div {
+    display: none;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px) {
-
+  #scroll-up-div {
+    display: none;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -154,7 +170,7 @@ MEDIA QUERIES
       height: calc(100vh - 56px);
       display: flex;
       align-items: center;
-      background-image: url('./../images/surf.jpg');
+      // background-image: url('./../images/surf.jpg');
       // background-size: cover;
       background-position: 90% 10%;
       .container {
@@ -163,6 +179,20 @@ MEDIA QUERIES
         margin-top: -56px;
         opacity: 0.9;
       }
+    }
+  }
+
+  #scroll-up-div {
+    position: fixed;
+    z-index: 1;
+    top: 90%;
+    left: 93%;
+    i {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      margin: 6px;
+      color: $brand-color;
     }
   }
 }
