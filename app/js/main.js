@@ -8,7 +8,12 @@ $(function(){
 
   //scroll to top favicon fade-in
   $(window).scroll(function(){
-    $('#scroll-up-div i').show(1500);
+    $('#scroll-up-div i').fadeIn(1300)
   })
+
+  $('#scroll-up-div').on('click', function(){
+    $(window).scrollTop(0);
+    // $('#scroll-up-div i').hide(1000)
+  });
 
 });
