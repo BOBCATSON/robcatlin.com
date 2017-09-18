@@ -5,8 +5,7 @@ SASS VARIABLES
 GENERAL HTML STYLES
 *******************************************************************************/
 html {
-  box-sizing: border-box;
-  color: #6D676E; }
+  box-sizing: border-box; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -15,19 +14,25 @@ body {
   position: relative; }
 
 a {
-  color: #0275D8; }
+  color: #274C77; }
   a:hover {
-    color: #D11149;
+    color: #C33C54;
     text-decoration: none; }
+
+p:not(h1) {
+  color: #565554; }
 
 /*
 HEADER
 *******************************************************************************/
 .jumbotron {
+  background-image: url("./../assets/laptop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 10px;
   background-color: #fff; }
   .jumbotron .logo-text p {
-    color: #F18805; }
+    color: #0275D8; }
 
 /*
 NAVIGATION
@@ -71,13 +76,16 @@ MEDIA QUERIES
 *******************************************************************************/
 @media (max-width: 575px) {
   .jumbotron {
-    padding: 0; }
+    padding: 10px 0; }
     .jumbotron .logo-text {
       margin-left: 0;
       padding: 1rem 0; }
 
   h1 {
     margin-bottom: 0; }
+
+  h3 {
+    margin-top: 10px; }
 
   .contact-col {
     margin: 0; }
@@ -137,6 +145,6 @@ MEDIA QUERIES
       justify-content: center;
       align-items: center;
       margin: 6px;
-      color: #F18805; } }
+      color: #0275D8; } }
 
 /*# sourceMappingURL=main.css.map */

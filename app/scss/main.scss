@@ -1,18 +1,18 @@
 /*
 SASS VARIABLES
 *******************************************************************************/
-$brand-color: #F18805;
-$link-color: #0275D8;
-$link-hover: #D11149;
+$brand-color: #0275D8;
+$link-color: #274C77;
+$link-hover: #C33C54;
 $link-visited: #A30000;
-$text-color: #6D676E;
+$text-color: #565554;
 
 /*
 GENERAL HTML STYLES
 *******************************************************************************/
 html {
   box-sizing: border-box;
-  color: $text-color;
+
 }
 
 *, *:before, *:after {
@@ -31,10 +31,17 @@ a {
   }
 }
 
+p:not(h1) {
+  color: $text-color;
+}
+
 /*
 HEADER
 *******************************************************************************/
 .jumbotron {
+  background-image: url("./../assets/laptop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 10px;
   background-color: #fff;
   .logo-text p {
@@ -96,7 +103,7 @@ MEDIA QUERIES
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
   .jumbotron {
-    padding: 0;
+    padding: 10px 0;
     .logo-text {
       margin-left: 0;
       padding: 1rem 0;
@@ -105,6 +112,10 @@ MEDIA QUERIES
 
   h1 {
     margin-bottom: 0;
+  }
+
+  h3 {
+    margin-top: 10px;
   }
 
   .contact-col {
