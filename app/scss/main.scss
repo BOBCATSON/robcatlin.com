@@ -2,10 +2,10 @@
 SASS VARIABLES
 *******************************************************************************/
 $brand-color: #0275D8;
-$link-color: #274C77;
-$link-hover: #C33C54;
-$link-visited: #A30000;
-$text-color: #565554;
+$link-color: #0275D8;
+$link-hover: #D00000;
+$link-visited: #274690;
+$text-color: #424B54;
 
 /*
 GENERAL HTML STYLES
@@ -17,6 +17,10 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+p {
+  color: $text-color;
 }
 
 body {
@@ -31,18 +35,23 @@ a {
   }
 }
 
-p:not(h1) {
-  color: $text-color;
-}
+// .container {
+//   // padding: 12px;
+//   // border-radius: 5px;
+//   // border-bottom: solid 5px #CCC;
+// }
+//
+// .container:nth-child(1n+3) {
+//   background-color: white;
+//   padding: 15px;
+//   border-radius: 5px;
+//   border-bottom: solid 5px #CCC;
+// }
 
 /*
 HEADER
 *******************************************************************************/
 .jumbotron {
-  background-image: url("./../assets/laptop.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 10px;
   background-color: #fff;
   .logo-text p {
     color: $brand-color;
@@ -59,6 +68,18 @@ NAVIGATION
 /*
 ABOUT ME SECTION
 *******************************************************************************/
+dt {
+  margin-bottom: 6px;
+}
+
+dd {
+  padding: 0 0 0 6px;
+  background-color: #CCC;
+}
+
+dl dd:nth-child(odd) {
+  background-color: #EEE;
+}
 
 /*
 PORTFOLIO SECTION
@@ -71,7 +92,6 @@ PORTFOLIO SECTION
 CONTACT
 *******************************************************************************/
 .contact-col {
-  background-color: #fff;
   margin-top: 3rem;
 }
 
@@ -145,7 +165,7 @@ MEDIA QUERIES
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
   .jumbotron {
-    padding: 0;
+    padding: 10px 0;
     .logo-text {
       margin-left: 0;
       padding: 1rem 0;
@@ -154,6 +174,11 @@ MEDIA QUERIES
       }
     }
   }
+
+  h3 {
+    margin-top: 10px;
+  }
+
   #scroll-up-div {
     display: none;
   }
@@ -181,9 +206,11 @@ MEDIA QUERIES
       height: calc(100vh - 56px);
       display: flex;
       align-items: center;
-      // background-image: url('./../images/surf.jpg');
-      // background-size: cover;
-      background-position: 90% 10%;
+      background-image: url("./../assets/mouse.jpg");
+      background-size: cover;
+
+      background-repeat: no-repeat;
+      background-color: #fff;
       .container {
         justify-content: center;
         align-items: center;

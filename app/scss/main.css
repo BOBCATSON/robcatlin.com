@@ -10,26 +10,22 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+p {
+  color: #424B54; }
+
 body {
   position: relative; }
 
 a {
-  color: #274C77; }
+  color: #0275D8; }
   a:hover {
-    color: #C33C54;
+    color: #D00000;
     text-decoration: none; }
-
-p:not(h1) {
-  color: #565554; }
 
 /*
 HEADER
 *******************************************************************************/
 .jumbotron {
-  background-image: url("./../assets/laptop.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 10px;
   background-color: #fff; }
   .jumbotron .logo-text p {
     color: #0275D8; }
@@ -43,6 +39,16 @@ NAVIGATION
 /*
 ABOUT ME SECTION
 *******************************************************************************/
+dt {
+  margin-bottom: 6px; }
+
+dd {
+  padding: 0 0 0 6px;
+  background-color: #CCC; }
+
+dl dd:nth-child(odd) {
+  background-color: #EEE; }
+
 /*
 PORTFOLIO SECTION
 *******************************************************************************/
@@ -53,7 +59,6 @@ PORTFOLIO SECTION
 CONTACT
 *******************************************************************************/
 .contact-col {
-  background-color: #fff;
   margin-top: 3rem; }
 
 .fa {
@@ -106,12 +111,15 @@ MEDIA QUERIES
     display: none; } }
 @media (min-width: 576px) and (max-width: 767px) {
   .jumbotron {
-    padding: 0; }
+    padding: 10px 0; }
     .jumbotron .logo-text {
       margin-left: 0;
       padding: 1rem 0; }
       .jumbotron .logo-text .logo-img-span {
         display: none; }
+
+  h3 {
+    margin-top: 10px; }
 
   #scroll-up-div {
     display: none; } }
@@ -128,7 +136,10 @@ MEDIA QUERIES
       height: calc(100vh - 56px);
       display: flex;
       align-items: center;
-      background-position: 90% 10%; }
+      background-image: url("./../assets/mouse.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #fff; }
       header .jumbotron .container {
         justify-content: center;
         align-items: center;
